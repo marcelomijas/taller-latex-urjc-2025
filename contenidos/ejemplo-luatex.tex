@@ -1,0 +1,40 @@
+% Esta plantilla ha sido creada por Marcelo Marcelo Moreno Porras,
+% como parte del taller de Creación de Hojas de Referencia con LaTex
+% de las Cuartas Jornadas de Cultura Libre de la Universidad Rey Juan Carlos
+% CC-BY-4.0 license
+
+% ¡Requiere de cambio de compilador a LuaLaTeX!
+% Menu -> Compiler -> LuaLaTeX
+
+\documentclass{article}
+
+% ----- packages -----
+\usepackage{luacode} % Helper for executing lua code from within TeX
+
+% ----- document -----
+\begin{document}
+
+\section{Ejemplo de LuaLaTeX}
+
+Este documento usa \textbf{LuaLaTeX}, lo que nos permite ejecutar código en \textbf{Lua}.
+
+\subsection{Ejemplo de código Lua}
+Podemos ejecutar Lua dentro de LaTeX. Por ejemplo, la suma de dos números:
+
+\begin{luacode}
+a = 10
+b = 20
+tex.print("La suma de " .. a .. " y " .. b .. " es " .. (a + b) .. ".")
+\end{luacode}
+
+\subsection{Otro ejemplo con Lua}
+Podemos definir funciones en Lua y usarlas dentro del documento:
+
+\begin{luacode*}
+function cuadrado(x)
+  return x * x
+end
+tex.print("El cuadrado de 5 es " .. cuadrado(5) .. ".")
+\end{luacode*}
+
+\end{document}

@@ -1,0 +1,45 @@
+% Esta plantilla ha sido creada por Marcelo Marcelo Moreno Porras,
+% como parte del taller de Creación de Hojas de Referencia con LaTex
+% de las Cuartas Jornadas de Cultura Libre de la Universidad Rey Juan Carlos
+% CC-BY-4.0 license
+
+\documentclass{article}
+
+% ----- document -----
+\begin{document}
+
+\section{Ejemplos básicos}
+Este es un ejemplo de un documento muy básico con \LaTeX. Aquí se muestra cómo utilizar \textbf{texto en negrita} y \textit{texto en cursiva}.
+
+\subsection{Ecuaciones}
+La fórmula cuadrática es: 
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+\subsection{Listas}
+Ejemplo de una lista:
+\begin{itemize}
+    \item Primer elemento de la lista
+    \item Segundo elemento de la lista
+    \begin{itemize}
+        \item Item anidado
+    \end{itemize}
+    \item Tercer elemento de la lista
+\end{itemize}
+
+\subsection{Tablas}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Palabra1 & Palabra2 & Palabra3 & Palabra4 & Palabra5 \\ \hline
+        Albahaca & Brújula  & Cacerola & Delfín   & Estrella \\ \hline
+        Faro     & Gorrión  & Hormiga  & Isla     & Jazmín   \\ \hline
+        Koala    & Linterna & Marea    & Nieve    & Olivo    \\ \hline
+    \end{tabular}
+    \caption{Tabla de palabras aleatorias}
+    \label{tab:palabras_aleatorias}
+\end{table}
+
+\end{document}
